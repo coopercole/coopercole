@@ -1,0 +1,242 @@
+/*https://coolors.co/ffffff-00a7e1-00171f-003459-007ea7*/
+
+/* 
+h1 is   32px   (2em)
+h2 is   24px (1.5em)
+h3 is 20.8px (1.3em)
+h4 is   16px   (1em)
+h5 is 12.8px (0.8em)
+h6 is 11.2px (0.7em) 
+
+Large is 18 px which is around 13.5 pt
+
+Larger is 19 px which is around 14 pt
+
+Medium is 16 px which is around 12 pt
+
+Small is 13 px which is around 10 pt
+
+Smaller is 13 px which is around 10 pt
+
+X-large is 24 px which is around 18 pt
+
+X-small is 10 px which is around 7.5 pt
+
+XX-large is 32 px which is around 24 pt
+
+XX-small is 9 px which is around 7 pt
+
+*/
+
+
+html {
+  height: 100%;
+}
+body {
+    /*background: linear-gradient(#0061ff 10%, #60efff);*/
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  h2 {
+    color: #FFFAFB;
+    text-align: center;
+  }
+  h3 {
+    color: #FFFAFB;
+    padding-left: 30px; 
+    font-size: 2.05vh;
+  }
+  h4 {
+    color: #FFFAFB;
+    padding-left: 30px;
+    font-size: 1.7vh;
+  }
+  h5 {
+    color: #FFFAFB;
+    padding-left: 30px;
+  }
+  h6 {
+    color: #FFFAFB;
+    padding-left: 30px; 
+  }
+  p {
+    color: #FFFAFB;
+    font-size: 2vh;
+    padding: 20px;
+    text-align: left;
+    margin: 0;
+  }
+
+
+.cooper {
+  font-size: 3.3vh;
+  color: #FFFAFB;
+  float: left;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Ubuntu, sans-serif;
+}
+
+/* Used for Years on experience */
+span {
+  float: right;
+  padding-right: 10px;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  
+  background-color: #000814;
+  
+  outline-style: solid;
+  outline-color: #FFFAFB;
+  outline-width: thick;
+  z-index: 2;
+}
+
+.topnav li {
+  float: right;
+  margin-top: 4px;
+}
+
+.topnav li a {
+  color: #FFFAFB;
+  text-decoration: none;
+  font-size: 2.5vh;
+  display: inline-block;
+  padding: 20px;
+}
+
+/* the contact page with links style */
+.contact a {
+  color: #FFFAFB;
+  text-decoration: none;
+}
+
+/* contact page general style */
+.contact {
+  text-align: center;
+  padding-left: 0;
+}
+
+.welcome {
+  font-size: 2.3vh;
+}
+
+/* Style the content */
+.content {
+  position: relative;
+  margin: auto;
+  top: 15%;
+  width: 50%;
+  border: 5px solid #FFFAFB;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #000814;
+  /* z-index: -1; */
+}
+
+.content ul {
+  padding-left: 70px;
+  color: #FFFAFB;
+  font-size: 1.7vh
+}
+
+.content ul li {
+  margin: 10px 0;
+  margin-right: 10px;
+}
+
+a:hover {
+  background: radial-gradient(#858e96, #60696b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add a color to the active/current link */
+.active {
+  /* background: linear-gradient(to right, #0061ff, #60efff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  font: null;
+}
+
+img {
+  border-radius: 20px;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.content .dropdown-content {
+  display: none;
+  position: absolute;
+  /* min-width: 160px; */
+  z-index: 1;
+}
+
+.content h4:hover + .dropdown-content {
+  display: block;
+}
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav li.icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 760px) {
+  .topnav li:not(:first-child) {display: none;}
+
+  .topnav li.icon {
+    float: right;
+    display: block;
+    color: #FFFAFB;
+  }
+
+  .content {
+    width: 80%;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 760px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  .topnav.responsive ul li:nth-child(2) a {
+    margin-top: 70px;
+  }
+
+  .topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+
+}
+
