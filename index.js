@@ -10,27 +10,27 @@ var bgcolorlist = ['linear-gradient(#60efff, #0061ff)'];
 $(document).ready(function() {
   var randomNumber = Math.floor(Math.random()*bgcolorlist.length);
   
-  $("body").css("background", bgcolorlist[randomNumber]);
+  // $("body").css("background", bgcolorlist[randomNumber]);
 
-  $(".active").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent"});
+  // $(".active").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
+  // "-webkit-background-clip": "text",
+  // "-webkit-text-fill-color": "transparent"});
 
-  $(".cooper").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent"});
+  // $(".cooper").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
+  // "-webkit-background-clip": "text",
+  // "-webkit-text-fill-color": "transparent"});
 
-  $(".content h4").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent"});
+  // $(".content h4").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
+  // "-webkit-background-clip": "text",
+  // "-webkit-text-fill-color": "transparent"});
 
-  $(".welcome").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent"});
+  // $(".welcome").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
+  // "-webkit-background-clip": "text",
+  // "-webkit-text-fill-color": "transparent"});
 
-  $(".contact").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent"});
+  // $(".contact").css({"background": bgcolorlist[randomNumber], "background-clip": "text",
+  // "-webkit-background-clip": "text",
+  // "-webkit-text-fill-color": "transparent"});
   
   console.log(bgcolorlist[randomNumber]);
 });

@@ -30,41 +30,49 @@ XX-small is 9 px which is around 7 pt
 
 
 html {
-  height: 100%;
+  height: 80%;
 }
 body {
-    /*background: linear-gradient(#0061ff 10%, #60efff);*/
+    /* background: linear-gradient(#0061ff 10%, #60efff); */
+    background: #dee2e6;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  h1 {
+    color: #343a40;
+    /* top | right | bottom | left */
+    margin: 2.5% 20% 0px 15%;
+    font-size: 5vh;
+    font-weight: bolder;
+  }
   h2 {
-    color: #FFFAFB;
-    text-align: center;
+    color: #343a40;
+    font-size: 3vh;
+    font-weight: bolder;
   }
   h3 {
-    color: #FFFAFB;
-    padding-left: 30px; 
+    color: #343a40;
     font-size: 2.05vh;
+    margin-bottom: 0;
   }
   h4 {
-    color: #FFFAFB;
-    padding-left: 30px;
+    color: #343a40;
     font-size: 1.7vh;
   }
   h5 {
-    color: #FFFAFB;
+    color: #343a40;
     padding-left: 30px;
   }
   h6 {
-    color: #FFFAFB;
+    color: #343a40;
     padding-left: 30px; 
   }
   p {
-    color: #FFFAFB;
+    color: #343a40;
     font-size: 2vh;
-    padding: 20px;
+    padding: 0px;
     text-align: left;
     margin: 0;
   }
@@ -72,7 +80,7 @@ body {
 
 .cooper {
   font-size: 3.3vh;
-  color: #FFFAFB;
+  color: #343a40;
   float: left;
   padding: 20px;
   text-decoration: none;
@@ -96,10 +104,10 @@ span {
   position: fixed;
   overflow: hidden;
   
-  background-color: #000814;
+  background-color: #f8f9fa;
   
   outline-style: solid;
-  outline-color: #FFFAFB;
+  outline-color: #343a40;
   outline-width: thick;
   z-index: 2;
 }
@@ -110,7 +118,7 @@ span {
 }
 
 .topnav li a {
-  color: #FFFAFB;
+  color: #343a40;
   text-decoration: none;
   font-size: 2.5vh;
   display: inline-block;
@@ -119,13 +127,13 @@ span {
 
 /* the contact page with links style */
 .contact a {
-  color: #FFFAFB;
+  color: #343a40;
   text-decoration: none;
 }
 
 /* contact page general style */
 .contact {
-  text-align: center;
+  text-align: left;
   padding-left: 0;
 }
 
@@ -136,19 +144,15 @@ span {
 /* Style the content */
 .content {
   position: relative;
-  margin: auto;
-  top: 15%;
-  width: 50%;
-  border: 5px solid #FFFAFB;
-  padding: 10px;
-  border-radius: 40px;
-  background-color: #000814;
-  /* z-index: -1; */
+  /* top | right | bottom | left */
+  margin: 0% 25% 0px 15%;
+  top: 0%;
+  /* width: 70%; */
 }
 
 .content ul {
-  padding-left: 70px;
-  color: #FFFAFB;
+  padding-left: 20px;
+  color: #343a40;
   font-size: 1.7vh
 }
 
@@ -206,7 +210,7 @@ Show the link that contains should open and close the topnav (.icon) */
   .topnav li.icon {
     float: right;
     display: block;
-    color: #FFFAFB;
+    color: #343a40;
   }
 
   .content {
