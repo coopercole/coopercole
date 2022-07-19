@@ -16,6 +16,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  footer {
+	position: fixed;
+	/* top | right | bottom | left */
+	margin: 2.5% 10% 0% 15%;
+	width: 100%;
+}
   h1 {
     color: var(--text);
     font-size: 7vh;
@@ -31,6 +37,11 @@ body {
     font-size: 3.05vh;
     margin-bottom: 0;
   }
+  h4 {
+	color: var(--text);
+	font-size: 3vh;
+	margin: 0 0 20px 0;
+  }
   p {
     color: var(--text);
     font-size: 3vh;
@@ -41,12 +52,12 @@ body {
 	/* top | right | bottom | left */
 	margin: 2.5% 10% 0% 15%;
 }
-  
+
 /* Style the content */
 .content {
 	position: relative;
 	/* top | right | bottom | left */
-	margin: 0% 10% 2.5% 15%;
+	margin: 0% 10% 5% 15%;
 }
 
 .experience a {
