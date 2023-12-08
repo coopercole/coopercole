@@ -1,16 +1,19 @@
 body {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     font-family: Calibri, sans-serif;
+    height: 100%;
     margin: 0;
+    background-image: url('assets/abstract-dark-blue-wallpaper-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
+    
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* bright blue */
-    background-color: #008cffd7;
 }
 
 li {
@@ -21,20 +24,58 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 li a:hover {
     /* bright blue */
-    color: black;
+    color: darkblue;
     /* include a underline */
     text-decoration: underline;
 }
 
 nav {
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
     border-bottom: 3px solid black;
-    background-color: #008cffd7;
+    background-color: aliceblue;
+}
+
+footer {
+    /* top | right | bottom | left */
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+    border-top: solid;
+    display: block;
+}
+
+.home {
+    background-color: aliceblue;
+    /* top | right | bottom | left */
+    margin: 2.5% 65% 2.5% 2.5%;
+    padding: 1%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.engineering {
+    background-color: aliceblue;
+    /* top | right | bottom | left */
+    margin: 2.5% 65% 2.5% 2.5%;
+    padding: 1%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.photos {
+    background-color: aliceblue;
+    /* top | right | bottom | left */
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    padding: 1% 1% 2.5% 1%;
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
 .image-row {
@@ -45,11 +86,33 @@ nav {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 5px;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
+}
+
+.gallery figcaption {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+    .image-row {
+        flex-direction: column;
+    }
+    .home {
+        margin: 2.5% 2.5% 154% 2.5%;
+        padding: 5%;
+    }
+    .engineering {
+        margin: 2.5% 2.5% 2.5% 2.5%;
+        padding: 5%;
+    }
+    .photos {
+        margin: 2.5% 2.5% 2.5% 2.5%;
+        padding: 5%;
+    }
 }
