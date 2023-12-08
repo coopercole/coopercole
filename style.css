@@ -81,19 +81,25 @@ footer {
 .image-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1px;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
+    padding: 0%;
 }
+
+.gallery figure {
+    margin: 3%;
+}
+
 
 .gallery figcaption {
   text-align: center;
